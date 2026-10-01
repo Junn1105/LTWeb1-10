@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+    <persistence-unit name="BaiTapGiuaKyPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>vn.iotstar.entity.User_24110053</class>
+        <class>vn.iotstar.entity.Book_24110053</class>
+        <class>vn.iotstar.entity.Author_24110053</class>
+        <class>vn.iotstar.entity.Rating_24110053</class>
+        <class>vn.iotstar.entity.Order_24110053</class>
+        <class>vn.iotstar.entity.OrderItem_24110053</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="validate"/>
+            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.jdbc.time_zone" value="Asia/Ho_Chi_Minh"/>
+        </properties>
+    </persistence-unit>
+</persistence>
